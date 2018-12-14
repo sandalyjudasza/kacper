@@ -54,19 +54,6 @@ var app = {
 
     },
 
-
-    function refresh() {
-
-        setTimeout(function () {
-            location.reload()
-        }, 100);
-    }
-
-
-
-
-
-
     play: function(drum) {
         document.getElementById(drum).classList.add('touched');
         window.plugins.NativeAudio.play(drum, 
